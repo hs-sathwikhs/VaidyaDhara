@@ -8,6 +8,9 @@ import './index.css';
 // Import your page components (we will create these next)
 import ChatPage from './pages/ChatPage.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
+import HealthTipsPage from './pages/HealthTipsPage.jsx';
+import EmergencyPage from './pages/EmergencyPage.jsx';
+import SymptomCheckerPage from './pages/SymptomCheckerPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <DashboardPage />,
+      },
+      {
+        path: 'symptoms',
+        element: <SymptomCheckerPage />,
+      },
+      {
+        path: 'tips',
+        element: <HealthTipsPage />,
+      },
+      {
+        path: 'emergency',
+        element: <EmergencyPage />,
       },
     ],
   },
