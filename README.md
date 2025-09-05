@@ -1,4 +1,4 @@
-# VaidyaDhara - AI Healthcare Assistant
+# VaidyaDhara - AI Healthcare ChatBot
 
 A comprehensive AI-powered healthcare chatbot that provides medical guidance in multiple Indian languages.
 
