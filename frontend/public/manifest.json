@@ -1,0 +1,55 @@
+{
+  "short_name": "Vaidya Dhara",
+  "name": "Vaidya Dhara - AI Healthcare Assistant",
+  "description": "AI-Powered Public Health Chatbot for comprehensive healthcare assistance in multiple Indian languages",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4a90e2",
+  "background_color": "#ffffff",
+  "categories": ["health", "medical", "productivity", "utilities"],
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "type": "image/png",
+      "sizes": "1280x720"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emergency Contact",
+      "short_name": "Emergency",
+      "description": "Quick access to emergency medical contacts",
+      "url": "/?emergency=true",
+      "icons": [{ "src": "emergency-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Symptom Checker",
+      "short_name": "Symptoms",
+      "description": "Check your symptoms with AI assistance",
+      "url": "/?feature=symptom-checker",
+      "icons": [{ "src": "symptom-icon.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

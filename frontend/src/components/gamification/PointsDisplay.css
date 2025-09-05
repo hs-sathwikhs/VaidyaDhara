@@ -1,0 +1,409 @@
+.points-display {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 100%);
+  border: 2px solid #4dd0e1;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.points-display::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(77, 208, 225, 0.1) 0%, transparent 70%);
+  animation: shimmer 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+}
+
+/* Compact Version */
+.points-display.compact {
+  background: linear-gradient(135deg, #4dd0e1, #26c6da);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(77, 208, 225, 0.3);
+}
+
+.points-display.compact::before {
+  display: none;
+}
+
+.points-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.points-badge .points-icon {
+  font-size: 1.1rem;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2) rotate(15deg); }
+}
+
+.points-badge .points-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Full Version */
+.points-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.points-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #006064;
+  margin: 0;
+}
+
+.level-badge {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+}
+
+.points-main {
+  margin-bottom: 2rem;
+}
+
+.points-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #4dd0e1, #26c6da);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(77, 208, 225, 0.4);
+}
+
+.points-circle::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.points-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.points-circle .points-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.points-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #006064;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.points-value.animating {
+  animation: pointsPulse 0.5s ease-in-out;
+}
+
+@keyframes pointsPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.points-label {
+  font-size: 0.7rem;
+  color: #00838f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-bottom: 1.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  color: #006064;
+  font-weight: 600;
+}
+
+.progress-points {
+  font-size: 0.8rem;
+  color: #00838f;
+  font-weight: 500;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(77, 208, 225, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4dd0e1, #26c6da);
+  border-radius: 4px;
+  transition: width 1s ease-out;
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  animation: progressShine 2s infinite;
+}
+
+@keyframes progressShine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Actions */
+.points-actions {
+  margin-top: 1rem;
+}
+
+.earn-points-btn {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+.earn-points-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+  background: linear-gradient(135deg, #f57c00, #ef6c00);
+}
+
+.earn-points-btn:focus {
+  outline: 3px solid rgba(255, 152, 0, 0.5);
+  outline-offset: 2px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .points-display {
+    padding: 1rem;
+  }
+
+  .points-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .points-value {
+    font-size: 1.25rem;
+  }
+
+  .points-circle .points-icon {
+    font-size: 1.25rem;
+  }
+
+  .points-title {
+    font-size: 1.1rem;
+  }
+
+  .points-badge .points-value {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .points-display {
+    padding: 0.75rem;
+  }
+
+  .points-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .points-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .points-value {
+    font-size: 1.1rem;
+  }
+
+  .points-circle .points-icon {
+    font-size: 1.1rem;
+  }
+
+  .earn-points-btn {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .points-badge .points-value {
+    font-size: 0.85rem;
+  }
+
+  .points-badge .points-icon {
+    font-size: 1rem;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .points-display {
+    background: #fff;
+    border: 3px solid #000;
+  }
+
+  .points-display.compact {
+    background: #000;
+    color: #fff;
+  }
+
+  .points-circle {
+    background: #000;
+  }
+
+  .points-circle::after {
+    background: #fff;
+  }
+
+  .points-value,
+  .points-title,
+  .progress-label {
+    color: #000;
+  }
+
+  .level-badge {
+    background: #000;
+    color: #fff;
+  }
+
+  .progress-fill {
+    background: #000;
+  }
+
+  .earn-points-btn {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .points-display::before {
+    animation: none;
+  }
+
+  .points-badge .points-icon {
+    animation: none;
+  }
+
+  .points-circle .points-icon {
+    animation: none;
+  }
+
+  .points-value.animating {
+    animation: none;
+  }
+
+  .progress-fill {
+    transition: none;
+  }
+
+  .progress-fill::after {
+    animation: none;
+  }
+
+  .earn-points-btn:hover {
+    transform: none;
+  }
+}
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+  .points-display {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-color: #4dd0e1;
+    color: #f8fafc;
+  }
+
+  .points-title {
+    color: #4dd0e1;
+  }
+
+  .points-value {
+    color: #f8fafc;
+  }
+
+  .progress-label {
+    color: #4dd0e1;
+  }
+
+  .progress-points {
+    color: #94a3b8;
+  }
+}
