@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { analyticsAPI } from '../api';
 import { useHealthStore, useLocalizationStore } from '../store';
-import { translations } from '../translations';
+import { translations } from '../translations/index.js';
 
 function DashboardPage() {
   const [analytics, setAnalytics] = useState(null);

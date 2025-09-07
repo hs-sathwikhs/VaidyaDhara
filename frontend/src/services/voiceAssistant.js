@@ -278,9 +278,9 @@ class VoiceAssistantService {
   // Voice assistant welcome message
   getWelcomeMessage(language = 'en') {
     const messages = {
-      'en': 'Hello! I am Vaidya Dhara voice assistant. You can ask me health questions, navigate through the app, or use voice commands. How can I help you today?',
-      'hi': 'नमस्ते! मैं वैद्य धारा वॉइस असिस्टेंट हूं। आप मुझसे स्वास्थ्य प्रश्न पूछ सकते हैं, ऐप में नेविगेट कर सकते हैं, या वॉइस कमांड का उपयोग कर सकते हैं। आज मैं आपकी कैसे मदद कर सकता हूं?',
-      'kn': 'ನಮಸ್ಕಾರ! ನಾನು ವೈದ್ಯ ಧಾರಾ ವಾಯ್ಸ್ ಅಸಿಸ್ಟೆಂಟ್. ನೀವು ನನ್ನನ್ನು ಆರೋಗ್ಯ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಬಹುದು, ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಬಹುದು ಅಥವಾ ವಾಯ್ಸ್ ಕಮಾಂಡ್‌ಗಳನ್ನು ಬಳಸಬಹುದು. ಇಂದು ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?'
+      'en': 'Hello! I am RISHI, your AI health companion from Vaidya Dhara. You can ask me health questions, navigate through the app, or use voice commands. How can I help you today?',
+      'hi': 'नमस्ते! मैं RISHI हूं, वैद्य धारा से आपका AI स्वास्थ्य साथी। आप मुझसे स्वास्थ्य प्रश्न पूछ सकते हैं, ऐप में नेविगेट कर सकते हैं, या वॉइस कमांड का उपयोग कर सकते हैं। आज मैं आपकी कैसे मदद कर सकता हूं?',
+      'kn': 'ನಮಸ್ಕಾರ! ನಾನು RISHI, ವೈದ್ಯ ಧಾರಾದಿಂದ ನಿಮ್ಮ AI ಆರೋಗ್ಯ ಸಂಗಾತಿ. ನೀವು ನನ್ನನ್ನು ಆರೋಗ್ಯ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಬಹುದು, ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಬಹುದು ಅಥವಾ ವಾಯ್ಸ್ ಕಮಾಂಡ್‌ಗಳನ್ನು ಬಳಸಬಹುದು. ಇಂದು ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?'
     };
     
     return messages[language] || messages['en'];
