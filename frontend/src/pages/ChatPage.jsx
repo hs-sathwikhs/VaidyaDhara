@@ -1,16 +1,20 @@
 // src/pages/ChatPage.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader, Heart, AlertTriangle, Phone, Globe } from 'lucide-react';
+import { Send, Bot, User, Loader, Heart, AlertTriangle, Phone, Globe, Mic, Volume2 } from 'lucide-react';
 import { useChatStore, useUserStore, useLocalizationStore } from '../store';
 import { chatAPI, emergencyAPI } from '../api';
 import { translations } from '../translations';
 import ReactMarkdown from 'react-markdown';
+import VoiceAssistant from '../components/VoiceAssistant';
+import { voiceAssistant } from '../services/voiceAssistant';
+import { useNavigate } from 'react-router-dom';
 
 function ChatPage() {
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
+  const navigate = useNavigate();
 
   const { 
     messages, 
@@ -103,6 +107,42 @@ function ChatPage() {
       handleSendMessage();
     }
   };
+
+  // Handle voice input from voice assistant
+  const handleVoiceQuery = (voiceText) => {
+    setInputMessage(voiceText);
+    // Auto-send the voice message
+    setTimeout(() => {
+      sendMessage(voiceText);
+    }, 100);
+  };
+
+  // Handle navigation from voice commands
+  const handleVoiceNavigation = (path) => {
+    navigate(path);
+  };
+
+  // Auto-speak bot responses if voice settings enabled
+  const handleBotResponse = (message) => {
+    // This will be called when a new bot message is added
+    // The voice assistant will automatically speak if auto-speak is enabled
+    if (message.type === 'bot' && !message.isError) {
+      voiceAssistant.speak(message.content, currentLanguage);
+    }
+  };
+
+  // Listen for new messages to potentially speak them
+  useEffect(() => {
+    if (messages.length > 0) {
+      const lastMessage = messages[messages.length - 1];
+      if (lastMessage.type === 'bot' && !lastMessage.isError) {
+        // Small delay to ensure message is rendered
+        setTimeout(() => {
+          handleBotResponse(lastMessage);
+        }, 500);
+      }
+    }
+  }, [messages]);
 
   const quickActions = [
     {
@@ -321,6 +361,12 @@ function ChatPage() {
           {t('chat.enter.hint')}
         </div>
       </div>
+
+      {/* Voice Assistant Component */}
+      <VoiceAssistant 
+        onVoiceQuery={handleVoiceQuery}
+        onNavigate={handleVoiceNavigation}
+      />
     </div>
   );
 }
