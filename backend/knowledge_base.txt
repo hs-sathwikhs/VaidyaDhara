@@ -19,3 +19,17 @@ Answer: Dengue should be suspected when a high fever (40°C/104°F) is accompani
 
 Question: How can Dengue be prevented?
 Answer: The primary method of preventing Dengue is to avoid mosquito bites and to control the mosquito population. This includes eliminating places where mosquitoes can breed, such as stagnant water in containers. Personal protection includes using mosquito repellent and wearing protective clothing.
+
+### COVID-19 Information ###
+
+Question: What is COVID-19?
+Answer: COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus. It was first identified in December 2019 and became a global pandemic. COVID-19 primarily spreads through respiratory droplets when an infected person coughs, sneezes, talks, or breathes.
+
+Question: What are the symptoms of COVID-19?
+Answer: Common symptoms of COVID-19 include fever, cough, fatigue, body aches, sore throat, loss of taste or smell, shortness of breath, headache, nausea, vomiting, and diarrhea. Symptoms can range from mild to severe and may appear 2-14 days after exposure.
+
+Question: How can COVID-19 be prevented?
+Answer: COVID-19 can be prevented by getting vaccinated, wearing masks in crowded areas, maintaining physical distance, washing hands frequently with soap and water, avoiding touching face with unwashed hands, and staying home when sick.
+
+Question: What should I do if I have COVID-19 symptoms?
+Answer: If you have COVID-19 symptoms, you should get tested, isolate yourself from others, monitor your symptoms, stay hydrated, get plenty of rest, and contact a healthcare provider if symptoms worsen or if you have difficulty breathing.

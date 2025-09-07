@@ -167,6 +167,53 @@ export const analyticsAPI = {
       };
     }
   },
+  
+  getAdminAnalytics: async () => {
+    try {
+      const response = await api.get('/api/admin/analytics');
+      return response.data;
+    } catch (error) {
+      // Fallback admin data for demo
+      return {
+        totalUsers: 15420,
+        activeUsers: 8930,
+        totalChats: 45890,
+        avgSessionTime: '12:34',
+        healthQueries: 23450,
+        emergencyContacts: 89,
+        documentsAnalyzed: 1240,
+        gamesPlayed: 5670,
+        systemHealth: {
+          cpu: 68,
+          memory: 72,
+          disk: 45,
+          network: 95
+        },
+        userGrowth: [
+          { date: '2025-01-01', users: 1200 },
+          { date: '2025-01-15', users: 2800 },
+          { date: '2025-02-01', users: 5600 },
+          { date: '2025-02-15', users: 8900 },
+          { date: '2025-03-01', users: 12300 },
+          { date: '2025-03-15', users: 15420 },
+        ],
+        queryCategories: [
+          { name: 'General Health', value: 35, color: '#3B82F6' },
+          { name: 'Symptoms', value: 28, color: '#10B981' },
+          { name: 'Medications', value: 18, color: '#F59E0B' },
+          { name: 'Emergency', value: 12, color: '#EF4444' },
+          { name: 'Mental Health', value: 7, color: '#8B5CF6' }
+        ],
+        regionData: [
+          { region: 'North India', users: 4200, queries: 12400 },
+          { region: 'South India', users: 3800, queries: 11200 },
+          { region: 'West India', users: 3600, queries: 10800 },
+          { region: 'East India', users: 2400, queries: 7200 },
+          { region: 'Northeast', users: 1420, queries: 4290 }
+        ]
+      };
+    }
+  },
 };
 
 // Emergency Contacts API

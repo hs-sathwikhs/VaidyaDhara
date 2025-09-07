@@ -1,5 +1,5 @@
 fastapi
-uvicorn
+uvicorn[standard]
 pydantic
 sqlalchemy
 langchain
@@ -10,3 +10,7 @@ python-dotenv
 pandas
 streamlit
 plotly
+PyPDF2
+python-multipart
+requests
+python-dateutil
