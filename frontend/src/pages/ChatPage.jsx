@@ -1,26 +1,16 @@
 // src/pages/ChatPage.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader, Heart, AlertTriangle, Phone, Globe, Mic, Volume2, FileText, Gamepad2, Radar } from 'lucide-react';
+import { Send, Bot, User, Loader, Heart, AlertTriangle, Phone, Globe } from 'lucide-react';
 import { useChatStore, useUserStore, useLocalizationStore } from '../store';
 import { chatAPI, emergencyAPI } from '../api';
-import { translations } from '../translations/index.js';
+import { translations } from '../translations';
 import ReactMarkdown from 'react-markdown';
-import VoiceAssistant from '../components/VoiceAssistant';
-import DocumentAnalyzer from '../components/DocumentAnalyzer';
-import HealthGameEngine from '../components/HealthGameEngine';
-import KnowledgeRadar from '../components/KnowledgeRadar';
-import { voiceAssistant } from '../services/voiceAssistant';
-import { useNavigate } from 'react-router-dom';
 
 function ChatPage() {
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  const [showDocumentAnalyzer, setShowDocumentAnalyzer] = useState(false);
-  const [showHealthGame, setShowHealthGame] = useState(false);
-  const [showKnowledgeRadar, setShowKnowledgeRadar] = useState(false);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-  const navigate = useNavigate();
 
   const { 
     messages, 
@@ -114,42 +104,6 @@ function ChatPage() {
     }
   };
 
-  // Handle voice input from voice assistant
-  const handleVoiceQuery = (voiceText) => {
-    setInputMessage(voiceText);
-    // Auto-send the voice message
-    setTimeout(() => {
-      sendMessage(voiceText);
-    }, 100);
-  };
-
-  // Handle navigation from voice commands
-  const handleVoiceNavigation = (path) => {
-    navigate(path);
-  };
-
-  // Auto-speak bot responses if voice settings enabled
-  const handleBotResponse = (message) => {
-    // This will be called when a new bot message is added
-    // The voice assistant will automatically speak if auto-speak is enabled
-    if (message.type === 'bot' && !message.isError) {
-      voiceAssistant.speak(message.content, currentLanguage);
-    }
-  };
-
-  // Listen for new messages to potentially speak them
-  useEffect(() => {
-    if (messages.length > 0) {
-      const lastMessage = messages[messages.length - 1];
-      if (lastMessage.type === 'bot' && !lastMessage.isError) {
-        // Small delay to ensure message is rendered
-        setTimeout(() => {
-          handleBotResponse(lastMessage);
-        }, 500);
-      }
-    }
-  }, [messages]);
-
   const quickActions = [
     {
       icon: Heart,
@@ -199,33 +153,6 @@ function ChatPage() {
           </div>
           
           <div className="flex items-center gap-4">
-            {/* New Feature Buttons */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setShowDocumentAnalyzer(true)}
-                className="p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                title={t('analyze_medical_document', 'Analyze Prescription')}
-              >
-                <FileText className="w-5 h-5" />
-              </button>
-              
-              <button
-                onClick={() => setShowHealthGame(true)}
-                className="p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                title={t('health_decision_game', 'Health Decision Game')}
-              >
-                <Gamepad2 className="w-5 h-5" />
-              </button>
-              
-              <button
-                onClick={() => setShowKnowledgeRadar(true)}
-                className="p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                title={t('knowledge_radar', 'Knowledge Radar')}
-              >
-                <Radar className="w-5 h-5" />
-              </button>
-            </div>
-            
             {/* Language Selector */}
             <select
               value={currentLanguage}
@@ -394,28 +321,6 @@ function ChatPage() {
           {t('chat.enter.hint')}
         </div>
       </div>
-
-      {/* Voice Assistant Component */}
-      <VoiceAssistant 
-        onVoiceQuery={handleVoiceQuery}
-        onNavigate={handleVoiceNavigation}
-      />
-      
-      {/* New Feature Modals */}
-      <DocumentAnalyzer 
-        isOpen={showDocumentAnalyzer}
-        onClose={() => setShowDocumentAnalyzer(false)}
-      />
-      
-      <HealthGameEngine 
-        isOpen={showHealthGame}
-        onClose={() => setShowHealthGame(false)}
-      />
-      
-      <KnowledgeRadar 
-        isOpen={showKnowledgeRadar}
-        onClose={() => setShowKnowledgeRadar(false)}
-      />
     </div>
   );
 }

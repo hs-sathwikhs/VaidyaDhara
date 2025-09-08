@@ -1,18 +1,11 @@
 // src/components/Sidebar.jsx
 import { NavLink } from 'react-router-dom';
-import { 
-  MessageSquare, LayoutDashboard, Heart, Activity, Shield, Award, 
-  Home, FileText, Gamepad2, Settings, Mic 
-} from 'lucide-react';
-import { useLocalizationStore, useUserStore } from '../store';
-import { translations } from '../translations/index.js';
+import { MessageSquare, LayoutDashboard, Heart, Activity, Shield, Award } from 'lucide-react';
+import { useLocalizationStore } from '../store';
+import { translations } from '../translations';
 
 function Sidebar() {
   const { currentLanguage } = useLocalizationStore();
-  const { profile } = useUserStore();
-
-  // Check if user is admin
-  const isAdmin = profile.role === 'admin' || profile.isAdmin || false;
 
   // Translation function
   const t = (key, fallback = key) => {
@@ -46,47 +39,25 @@ function Sidebar() {
       {/* Navigation Links */}
       <nav className="flex flex-col space-y-2">
         <NavLink to="/" className={navLinkClasses}>
-          <Home className="w-5 h-5" />
-          <span className="font-medium">{t('nav.home', 'Home')}</span>
+          <MessageSquare className="w-5 h-5" />
+          <span className="font-medium">{t('nav.chat')}</span>
         </NavLink>
-        <NavLink to="/voice-analyzer" className={navLinkClasses}>
-          <Mic className="w-5 h-5" />
-          <span className="font-medium">{t('nav.voice_analyzer', 'RISHI Health Assistant')}</span>
-        </NavLink>
-        <NavLink to="/prescription-analyzer" className={navLinkClasses}>
-          <FileText className="w-5 h-5" />
-          <span className="font-medium">{t('nav.document_analyzer', 'Prescription Analyzer')}</span>
-        </NavLink>
-        <NavLink to="/health-games" className={navLinkClasses}>
-          <Gamepad2 className="w-5 h-5" />
-          <span className="font-medium">{t('nav.health_game', 'Health Games')}</span>
+        <NavLink to="/dashboard" className={navLinkClasses}>
+          <LayoutDashboard className="w-5 h-5" />
+          <span className="font-medium">{t('nav.dashboard')}</span>
         </NavLink>
         <NavLink to="/symptoms" className={navLinkClasses}>
           <Activity className="w-5 h-5" />
-          <span className="font-medium">{t('nav.symptoms', 'Symptom Checker')}</span>
+          <span className="font-medium">{t('nav.symptoms')}</span>
         </NavLink>
         <NavLink to="/health-tips" className={navLinkClasses}>
           <Shield className="w-5 h-5" />
-          <span className="font-medium">{t('nav.tips', 'Health Education')}</span>
+          <span className="font-medium">{t('nav.tips')}</span>
         </NavLink>
         <NavLink to="/rewards" className={navLinkClasses}>
           <Award className="w-5 h-5" />
-          <span className="font-medium">{t('nav.rewards', 'Rewards')}</span>
+          <span className="font-medium">{t('nav.rewards')}</span>
         </NavLink>
-        
-        {/* Admin-only Dashboard */}
-        {isAdmin && (
-          <>
-            <div className="border-t border-slate-200 my-2"></div>
-            <div className="px-4 py-2">
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Admin</p>
-            </div>
-            <NavLink to="/admin-dashboard" className={navLinkClasses}>
-              <Settings className="w-5 h-5" />
-              <span className="font-medium">{t('nav.admin_dashboard', 'Analytics Dashboard')}</span>
-            </NavLink>
-          </>
-        )}
       </nav>
 
       {/* Health Disclaimer */}

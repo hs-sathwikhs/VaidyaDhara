@@ -39,23 +39,12 @@ export const useUserStore = create(
         badges: [],
         healthGoals: [],
         joinDate: new Date().toISOString(),
-        role: 'user', // 'user' or 'admin'
-        isAdmin: false,
       },
       isAuthenticated: false,
       
       updateProfile: (updates) =>
         set((state) => ({
           profile: { ...state.profile, ...updates }
-        })),
-      
-      setAdminStatus: (isAdmin) =>
-        set((state) => ({
-          profile: {
-            ...state.profile,
-            isAdmin,
-            role: isAdmin ? 'admin' : 'user'
-          }
         })),
       
       addPoints: (points, activity) =>
@@ -92,12 +81,6 @@ export const useUserStore = create(
         if (points < 500) return 500 - points;
         if (points < 1000) return 1000 - points;
         return 0;
-      },
-      
-      // Check if user is admin
-      isUserAdmin: () => {
-        const profile = get().profile;
-        return profile.isAdmin || profile.role === 'admin';
       },
     }),
     {
