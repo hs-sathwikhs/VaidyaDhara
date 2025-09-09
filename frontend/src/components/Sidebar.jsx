@@ -1,6 +1,6 @@
 // src/components/Sidebar.jsx
 import { NavLink } from 'react-router-dom';
-import { MessageSquare, LayoutDashboard, Heart, Activity, Shield, Award } from 'lucide-react';
+import { MessageSquare, LayoutDashboard, Heart, Activity, Shield, Award, MapPin } from 'lucide-react';
 import { useLocalizationStore } from '../store';
 import { translations } from '../translations';
 
@@ -53,6 +53,10 @@ function Sidebar() {
         <NavLink to="/health-tips" className={navLinkClasses}>
           <Shield className="w-5 h-5" />
           <span className="font-medium">{t('nav.tips')}</span>
+        </NavLink>
+        <NavLink to="/disease-awareness" className={navLinkClasses}>
+          <MapPin className="w-5 h-5" />
+          <span className="font-medium">{t('nav.disease_awareness')}</span>
         </NavLink>
         <NavLink to="/rewards" className={navLinkClasses}>
           <Award className="w-5 h-5" />

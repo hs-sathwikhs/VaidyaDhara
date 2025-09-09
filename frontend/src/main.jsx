@@ -10,6 +10,7 @@ import ChatPage from './pages/ChatPage.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
 import SymptomCheckerPage from './pages/SymptomCheckerPage.jsx';
 import HealthTipsPage from './pages/HealthTipsPage.jsx';
+import DiseaseAwarenessPage from './pages/DiseaseAwarenessPageSimple.jsx';
 import RewardsPage from './pages/RewardsPage.jsx';
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'health-tips',
         element: <HealthTipsPage />,
+      },
+      {
+        path: 'disease-awareness',
+        element: <DiseaseAwarenessPage />,
       },
       {
         path: 'rewards',

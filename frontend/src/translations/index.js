@@ -7,6 +7,7 @@ export const translations = {
     'nav.dashboard': 'Analytics Dashboard', 
     'nav.symptoms': 'Symptom Checker',
     'nav.tips': 'Health Tips',
+    'nav.disease_awareness': 'Disease Awareness',
     'nav.rewards': 'Rewards & Points',
     
     // Chat Page
@@ -67,6 +68,18 @@ export const translations = {
     'rewards.total.points': 'Total Points',
     'rewards.current': 'Current Points',
     
+    // Disease Awareness
+    'disease.awareness': 'Disease Awareness',
+    'disease.alerts': 'Current Health Alerts',
+    'refresh': 'Refresh',
+    'total.cases': 'Total Cases',
+    'new.cases': 'New Cases',
+    'recovered': 'Recovered',
+    'under.treatment': 'Under Treatment',
+    'symptoms.watch': 'Symptoms to Watch For',
+    'prevention.measures': 'Prevention Measures',
+    'emergency.contacts': 'Emergency Contacts',
+
     // Common
     'app.name': 'Vaidya Dhara',
     'app.subtitle': 'Your AI Health Companion',
@@ -87,6 +100,7 @@ export const translations = {
     'nav.dashboard': 'एनालिटिक्स डैशबोर्ड',
     'nav.symptoms': 'लक्षण जांचकर्ता',
     'nav.tips': 'स्वास्थ्य सुझाव',
+    'nav.disease_awareness': 'रोग जागरूकता',
     'nav.rewards': 'पुरस्कार और अंक',
     
     // Chat Page
@@ -182,6 +196,18 @@ export const translations = {
     'rewards.completed': 'पूर्ण',
     'rewards.points': 'अंक',
     'rewards.max.level': 'अधिकतम स्तर!',
+    
+    // Disease Awareness
+    'disease.awareness': 'रोग जागरूकता',
+    'disease.alerts': 'वर्तमान स्वास्थ्य अलर्ट',
+    'refresh': 'रीफ्रेश',
+    'total.cases': 'कुल मामले',
+    'new.cases': 'नए मामले',
+    'recovered': 'ठीक हुए',
+    'under.treatment': 'उपचार के तहत',
+    'symptoms.watch': 'देखने योग्य लक्षण',
+    'prevention.measures': 'रोकथाम के उपाय',
+    'emergency.contacts': 'आपातकालीन संपर्क',
     
     // Common
     'app.name': 'वैद्य धारा',
