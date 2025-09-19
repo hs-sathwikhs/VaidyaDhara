@@ -1,0 +1,89 @@
+### Tuberculosis (TB) Information ###
+
+Question: What is Tuberculosis?
+Answer: Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. It is spread from person to person through the air when people who have active TB in their lungs cough, spit, speak, or sneeze.
+
+Question: What are the common symptoms of Tuberculosis?
+Answer: Common symptoms of active lung TB are a cough with sputum and blood at times, chest pains, weakness, weight loss, fever, and night sweats.
+
+Question: How is Tuberculosis treated?
+Answer: TB is a treatable and curable disease. Active, drug-susceptible TB disease is treated with a standard 6-month course of 4 antimicrobial drugs that are provided with information and support to the patient by a health worker or trained volunteer. Without such support, treatment adherence can be difficult and the disease can spread.
+
+### Dengue Fever Information ###
+
+Question: What is Dengue?
+Answer: Dengue is a mosquito-borne viral infection. It is transmitted by female mosquitoes mainly of the species Aedes aegypti. The virus responsible for causing dengue is called the dengue virus (DENV).
+
+Question: What are the symptoms of Dengue fever?
+Answer: Dengue should be suspected when a high fever (40°C/104°F) is accompanied by 2 of the following symptoms during the febrile phase: severe headache, pain behind the eyes, muscle and joint pains, nausea, vomiting, swollen glands, or rash.
+
+Question: How can Dengue be prevented?
+Answer: The primary method of preventing Dengue is to avoid mosquito bites and to control the mosquito population. This includes eliminating places where mosquitoes can breed, such as stagnant water in containers. Personal protection includes using mosquito repellent and wearing protective clothing.
+
+### Malaria Information ###
+
+Question: What is Malaria?
+Answer: Malaria is a life-threatening disease caused by parasites that are transmitted to people through the bites of infected female Anopheles mosquitoes. It is preventable and curable. There are 5 parasite species that cause malaria in humans, and 2 of these species – Plasmodium falciparum and Plasmodium vivax – pose the greatest threat.
+
+Question: What are the symptoms of Malaria?
+Answer: Malaria symptoms usually appear 10-15 days after the infective mosquito bite. The first symptoms include fever, headache, and chills, which may be mild and difficult to recognize as malaria. If not treated within 24 hours, P. falciparum malaria can progress to severe illness, often leading to death. Children with severe malaria frequently develop severe anaemia, respiratory distress, or cerebral malaria.
+
+Question: How is Malaria treated?
+Answer: Malaria is treated with antimalarial medications. The specific medication and length of treatment depend on the type of malaria, where the person was infected, their age, whether they are pregnant, and how sick they are at the start of treatment. Artemisinin-based combination therapies (ACTs) are the most effective antimalarial medicines available today.
+
+Question: How can Malaria be prevented?
+Answer: Vector control is the main way to prevent and reduce malaria transmission. Two forms of vector control are effective: insecticide-treated mosquito nets and indoor residual spraying. Antimalarial medicines can also be used to prevent malaria. For travellers, malaria can be prevented through chemoprophylaxis, which suppresses the blood stage of malaria infections.
+
+### COVID-19 Information ###
+
+Question: What is COVID-19?
+Answer: COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions are more likely to develop serious illness.
+
+Question: What are the symptoms of COVID-19?
+Answer: Common symptoms of COVID-19 include fever, dry cough, tiredness, and loss of taste or smell. Less common symptoms include aches and pains, sore throat, diarrhea, conjunctivitis, headache, skin rash, or discoloration of fingers or toes. Serious symptoms include difficulty breathing or shortness of breath, chest pain or pressure, and loss of speech or movement.
+
+Question: How does COVID-19 spread?
+Answer: The virus spreads from an infected person's mouth or nose in small liquid particles when they cough, sneeze, speak, sing, or breathe. These particles range from larger respiratory droplets to smaller aerosols. People can be infected by breathing in the virus if they are near someone with COVID-19, or by touching a contaminated surface and then their eyes, nose, or mouth.
+
+Question: How can COVID-19 be prevented?
+Answer: Prevention measures include getting vaccinated, wearing a mask in crowded or poorly ventilated areas, maintaining physical distance from others, washing hands regularly with soap and water or using alcohol-based hand sanitizer, covering coughs and sneezes, and staying home when feeling unwell. Good ventilation and air filtration in indoor spaces also help reduce transmission.
+
+Question: What should I do if I have COVID-19 symptoms?
+Answer: If you have symptoms, get tested for COVID-19 and stay home until you have the results. If you test positive, isolate yourself to protect others from infection. Wear a well-fitting mask when you need to be around others, avoid crowded places, and maintain distance from household members. Seek medical care if you have difficulty breathing, persistent chest pain, confusion, or bluish lips or face.
+
+### Diabetes Information ###
+
+Question: What is Diabetes?
+Answer: Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood glucose. There are three main types: Type 1 diabetes (the body doesn't produce insulin), Type 2 diabetes (the body doesn't use insulin properly), and gestational diabetes (develops during pregnancy).
+
+Question: What are the symptoms of Diabetes?
+Answer: Common symptoms include frequent urination, excessive thirst, extreme hunger, unexplained weight loss, fatigue, blurred vision, slow-healing sores or frequent infections, and tingling or numbness in hands or feet. Type 1 diabetes symptoms often develop quickly, while Type 2 diabetes symptoms may develop slowly over several years and can be so mild that they go unnoticed.
+
+Question: What are the complications of Diabetes?
+Answer: Over time, diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves. Adults with diabetes have a two to three times increased risk of heart attacks and strokes. Diabetes is a leading cause of kidney failure, blindness, and lower limb amputation. Diabetic neuropathy can cause tingling, pain, numbness, or weakness in the feet and hands.
+
+Question: How is Diabetes managed?
+Answer: Diabetes management includes healthy eating, regular physical activity, maintaining a normal body weight, and avoiding tobacco use. Type 1 diabetes requires daily insulin injections for survival. Type 2 diabetes can often be managed with lifestyle changes and oral medications, though some people may also need insulin. Regular monitoring of blood glucose levels is essential for all people with diabetes.
+
+Question: How can Type 2 Diabetes be prevented?
+Answer: Type 2 diabetes can often be prevented or delayed through maintaining a healthy body weight, being physically active (at least 30 minutes of regular activity most days), eating a healthy diet (avoiding sugar and saturated fats), and avoiding tobacco use. Regular health check-ups can help detect pre-diabetes early, allowing for interventions to prevent progression to diabetes.
+
+### Hypertension (High Blood Pressure) Information ###
+
+Question: What is Hypertension?
+Answer: Hypertension, also known as high blood pressure, is a condition in which blood vessels have persistently raised pressure. Blood pressure is written as two numbers - systolic pressure (when the heart beats) over diastolic pressure (when the heart rests between beats). Hypertension is diagnosed if readings are 140/90 mmHg or higher on two different days.
+
+Question: What are the symptoms of Hypertension?
+Answer: Hypertension is called a "silent killer" because most people with high blood pressure have no symptoms at all. When symptoms do occur, they may include early morning headaches, nosebleeds, irregular heart rhythms, vision changes, and buzzing in the ears. Severe hypertension can cause fatigue, nausea, vomiting, confusion, anxiety, chest pain, and muscle tremors.
+
+Question: What causes Hypertension?
+Answer: Risk factors include unhealthy diets (excessive salt consumption, high saturated and trans fat intake, low fruit and vegetable intake), physical inactivity, tobacco and alcohol use, and being overweight or obese. Non-modifiable risk factors include family history of hypertension, age over 65 years, and co-existing diseases such as diabetes or kidney disease.
+
+Question: Why is Hypertension dangerous?
+Answer: Uncontrolled high blood pressure can lead to serious health problems including heart attack, stroke, heart failure, kidney disease, vision loss, sexual dysfunction, angina (chest pain), and peripheral artery disease. It can also cause damage to blood vessels and organs, particularly the brain, heart, eyes, and kidneys.
+
+Question: How is Hypertension treated?
+Answer: Treatment includes lifestyle changes such as eating a healthier diet with less salt (DASH diet), regular physical activity, maintaining a healthy weight, limiting alcohol intake, not smoking, managing stress, and taking prescribed medications. Common medications include diuretics, ACE inhibitors, ARBs, calcium channel blockers, and beta-blockers. Regular monitoring and follow-up with healthcare providers is essential.
+
+Question: How can Hypertension be prevented?
+Answer: Prevention strategies include reducing salt intake to less than 5g daily, eating more fruits and vegetables, being physically active regularly, avoiding tobacco use, reducing alcohol consumption, limiting intake of foods high in saturated fats, eliminating trans fats in diet, managing stress through healthy methods, regularly checking blood pressure, and treating other medical conditions that may increase risk.

@@ -1,0 +1,73 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="healthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Central Medical Cross with Traditional Touch -->
+  <g transform="translate(100, 100)">
+    <!-- Outer decorative ring (inspired by traditional Indian patterns) -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="url(#techGradient)" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+    
+    <!-- Medical Cross -->
+    <rect x="-12" y="-40" width="24" height="80" fill="url(#healthGradient)" rx="4"/>
+    <rect x="-40" y="-12" width="80" height="24" fill="url(#healthGradient)" rx="4"/>
+    
+    <!-- Center circle (representing unity/wholeness) -->
+    <circle cx="0" cy="0" r="15" fill="#ffffff" stroke="url(#techGradient)" stroke-width="2"/>
+    
+    <!-- AI/Tech elements - Circuit patterns -->
+    <g opacity="0.7">
+      <!-- Top-left circuit -->
+      <path d="M -45,-45 L -35,-45 L -35,-35" fill="none" stroke="#0891b2" stroke-width="1.5"/>
+      <circle cx="-45" cy="-45" r="3" fill="#0891b2"/>
+      
+      <!-- Top-right circuit -->
+      <path d="M 45,-45 L 35,-45 L 35,-35" fill="none" stroke="#0891b2" stroke-width="1.5"/>
+      <circle cx="45" cy="-45" r="3" fill="#0891b2"/>
+      
+      <!-- Bottom-left circuit -->
+      <path d="M -45,45 L -35,45 L -35,35" fill="none" stroke="#0891b2" stroke-width="1.5"/>
+      <circle cx="-45" cy="45" r="3" fill="#0891b2"/>
+      
+      <!-- Bottom-right circuit -->
+      <path d="M 45,45 L 35,45 L 35,35" fill="none" stroke="#0891b2" stroke-width="1.5"/>
+      <circle cx="45" cy="45" r="3" fill="#0891b2"/>
+    </g>
+    
+    <!-- Water drop elements (Dhara = flow/stream) -->
+    <g transform="translate(0, -70)">
+      <path d="M 0,0 C -8,12 -8,20 0,28 C 8,20 8,12 0,0 Z" fill="url(#techGradient)" opacity="0.6"/>
+    </g>
+    
+    <g transform="translate(-50, 20) rotate(-30)">
+      <path d="M 0,0 C -6,9 -6,15 0,21 C 6,15 6,9 0,0 Z" fill="url(#techGradient)" opacity="0.5"/>
+    </g>
+    
+    <g transform="translate(50, 20) rotate(30)">
+      <path d="M 0,0 C -6,9 -6,15 0,21 C 6,15 6,9 0,0 Z" fill="url(#techGradient)" opacity="0.5"/>
+    </g>
+    
+    <!-- Community/Connection dots -->
+    <g opacity="0.8">
+      <circle cx="-70" cy="0" r="4" fill="#10b981"/>
+      <circle cx="70" cy="0" r="4" fill="#10b981"/>
+      <circle cx="0" cy="-70" r="4" fill="#10b981"/>
+      <circle cx="0" cy="70" r="4" fill="#10b981"/>
+      
+      <!-- Connecting lines -->
+      <line x1="-65" y1="0" x2="-40" y2="0" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+      <line x1="65" y1="0" x2="40" y2="0" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+      <line x1="0" y1="-65" x2="0" y2="-40" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+      <line x1="0" y1="65" x2="0" y2="40" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+    </g>
+  </g>
+</svg>

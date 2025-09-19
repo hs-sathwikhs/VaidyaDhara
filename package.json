@@ -1,0 +1,35 @@
+{
+  "name": "vaidya-dhara",
+  "version": "1.0.0",
+  "description": "AI-Driven Public Health Chatbot - Smart India Hackathon 2025",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "start": "concurrently --kill-others \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "setup": "npm run install:all && npm run db:init",
+    "db:init": "cd backend && python -c \"from app.database import init_db; init_db()\"",
+    "clean": "cd frontend && rmdir /s /q node_modules dist 2>nul & cd ../backend && rmdir /s /q __pycache__ 2>nul & echo Cleaned"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hs-sathwikhs/VaidyaDhara.git"
+  },
+  "keywords": [
+    "healthcare",
+    "AI",
+    "chatbot",
+    "SIH2025"
+  ],
+  "author": "Vaidya Dhara Team",
+  "license": "MIT"
+}

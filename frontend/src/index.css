@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom medical theme colors */
+:root {
+  /* Primary medical blues */
+  --medical-blue-50: #f0f9ff;
+  --medical-blue-100: #e0f2fe;
+  --medical-blue-200: #bae6fd;
+  --medical-blue-300: #7dd3fc;
+  --medical-blue-400: #38bdf8;
+  --medical-blue-500: #0ea5e9;
+  --medical-blue-600: #0284c7;
+  --medical-blue-700: #0369a1;
+  --medical-blue-800: #075985;
+  --medical-blue-900: #0c4a6e;
+
+  /* Calming greens */
+  --medical-green-50: #f0fdf4;
+  --medical-green-100: #dcfce7;
+  --medical-green-200: #bbf7d0;
+  --medical-green-300: #86efac;
+  --medical-green-400: #4ade80;
+  --medical-green-500: #22c55e;
+  --medical-green-600: #16a34a;
+  --medical-green-700: #15803d;
+  --medical-green-800: #166534;
+  --medical-green-900: #14532d;
+
+  /* Soft teals for accents */
+  --medical-teal-50: #f0fdfa;
+  --medical-teal-100: #ccfbf1;
+  --medical-teal-200: #99f6e4;
+  --medical-teal-300: #5eead4;
+  --medical-teal-400: #2dd4bf;
+  --medical-teal-500: #14b8a6;
+  --medical-teal-600: #0d9488;
+  --medical-teal-700: #0f766e;
+  --medical-teal-800: #115e59;
+  --medical-teal-900: #134e4a;
+}
+
+/* Global styles */
+@layer base {
+  body {
+    @apply antialiased;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-700;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .medical-card {
+    @apply bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .medical-button-primary {
+    @apply bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-[1.02] shadow-md;
+  }
+  
+  .medical-button-secondary {
+    @apply bg-white/90 hover:bg-white text-slate-700 border border-slate-200 hover:border-slate-300 font-medium px-6 py-3 rounded-lg transition-all duration-200 shadow-sm;
+  }
+  
+  .chat-bubble-user {
+    @apply bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-2xl rounded-br-md px-4 py-3 max-w-sm ml-auto shadow-sm;
+  }
+  
+  .chat-bubble-bot {
+    @apply bg-white border border-slate-200 text-slate-700 rounded-2xl rounded-bl-md px-4 py-3 max-w-sm mr-auto shadow-sm;
+  }
+  
+  .sidebar-nav-active {
+    @apply bg-gradient-to-r from-blue-500 to-teal-500 text-white shadow-md;
+  }
+  
+  .sidebar-nav-inactive {
+    @apply text-slate-600 hover:bg-white/50 hover:text-slate-800;
+  }
+}
